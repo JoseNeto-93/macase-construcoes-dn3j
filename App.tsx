@@ -31,21 +31,12 @@ const TypewriterText = ({ text, duration = 2 }: { text: string; duration?: numbe
         duration, 
         ease: 'linear',
         repeat: Infinity,
-        repeatType: 'loop'
+        repeatType: 'loop',
+        repeatDelay: 0.5
       }}
-      className="inline-block overflow-hidden"
+      className="inline-block overflow-hidden whitespace-nowrap"
     >
-      <motion.span
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ 
-          duration: 0.1,
-          repeat: Infinity,
-          repeatType: 'loop'
-        }}
-      >
-        {text}
-      </motion.span>
+      {text}
     </motion.span>
   );
 };
