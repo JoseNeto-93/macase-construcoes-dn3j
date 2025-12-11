@@ -293,8 +293,8 @@ const AboutModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
             <div className="absolute inset-0 bg-black/30 pointer-events-none"></div>
             {/* Máscara com gradiente transparente nas bordas */}
             <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent md:bg-gradient-to-r md:from-black/40 md:via-transparent md:to-zinc-950/60 pointer-events-none"></div>
-            {/* Borda com efeito de vidro */}
-            <div className="absolute inset-0 border-2 md:border-4 border-white/10 rounded-3xl opacity-40 pointer-events-none"></div>
+            {/* Borda quase invisível para blend com fundo preto */}
+            <div className="absolute inset-0 border-2 md:border-4 border-white/5 rounded-3xl opacity-0 pointer-events-none"></div>
           </div>
 
           {/* Coluna do Texto (Direita/Baixo) */}
