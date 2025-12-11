@@ -1,26 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './src/index.css';
+import App from './App';
 
-console.log('index.tsx loaded');
-
-let index_css_loaded = false;
-try {
-  require('./src/index.css');
-  index_css_loaded = true;
-  console.log('CSS loaded');
-} catch (e) {
-  console.error('Failed to load CSS:', e);
-}
-
-let App_loaded = false;
-let App: any = null;
-try {
-  App = require('./App').default;
-  App_loaded = true;
-  console.log('App loaded');
-} catch (e) {
-  console.error('Failed to load App:', e);
-}
+console.log('✓ All imports loaded successfully');
 
 // Error Boundary Component
 class ErrorBoundary extends React.Component<
@@ -62,18 +45,11 @@ if (!rootElement) {
   throw new Error("Could not find root element to mount to");
 }
 
-console.log('Mounting React app...');
+console.log('✓ Mounting React app...');
 
 const root = ReactDOM.createRoot(rootElement);
 
-if (!App) {
-  root.render(
-    <div style={{ padding: '20px', color: 'red', fontFamily: 'monospace' }}>
-      <h2>Failed to load App component</h2>
-      <p>Check console for details</p>
-    </div>
-  );
-} else {
+try {
   root.render(
     <React.StrictMode>
       <ErrorBoundary>
@@ -81,6 +57,13 @@ if (!App) {
       </ErrorBoundary>
     </React.StrictMode>
   );
+  console.log('✓ React render complete');
+} catch (error) {
+  console.error('Failed to render:', error);
+  root.render(
+    <div style={{ padding: '20px', color: 'red', fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
+      <h2>⚠️ Erro ao renderizar</h2>
+      <p>{String(error)}</p>
+    </div>
+  );
 }
-
-console.log('React render complete');
