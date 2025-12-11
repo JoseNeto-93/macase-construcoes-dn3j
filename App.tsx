@@ -71,7 +71,7 @@ const projects = [
     title: "Fundação e Impermeabilização",
     category: "Infraestrutura",
     description: "Execução de viga baldrame com impermeabilização asfáltica e preparação de solo compactado.",
-    image: "/fundacao-baldrame.jpg", 
+    image: "/fundacao-png.png", 
   },
   {
     title: "Estrutura de Concreto Armado",
