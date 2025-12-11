@@ -313,7 +313,7 @@ const AboutModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
                 <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-2">
                   A Construção da <br/> <span className="text-gray-500">Minha História</span>
                 </h2>
-                <p className="text-xl text-white font-medium mt-2">Marcelo Camargo, CEO da Macase</p>
+                <p className="text-xl text-white font-medium mt-2">Marcelo Camargo, Fundador e CEO da Macase</p>
               </div>
 
               <div className="space-y-6 text-gray-400 text-lg leading-relaxed text-justify">
