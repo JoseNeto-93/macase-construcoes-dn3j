@@ -4,54 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Macase Construções - Mestre de Obras</title>
-    <!-- Tailwind será usado via PostCSS (instale como dependencia em dev) -->
+    <!-- Tailwind será usado via PostCSS (configurado em tailwind.config.cjs) -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              border: "hsl(var(--border))",
-              input: "hsl(var(--input))",
-              ring: "hsl(var(--ring))",
-              background: "hsl(var(--background))",
-              foreground: "hsl(var(--foreground))",
-              primary: {
-                DEFAULT: "#18181b", // Zinc-950 (Black/Dark Gray)
-                foreground: "#ffffff",
-              },
-              secondary: {
-                DEFAULT: "#f3f4f6",
-                foreground: "#1f2937",
-              },
-              destructive: {
-                DEFAULT: "hsl(var(--destructive))",
-                foreground: "hsl(var(--destructive-foreground))",
-              },
-              muted: {
-                DEFAULT: "#f3f4f6",
-                foreground: "#6b7280",
-              },
-              accent: {
-                DEFAULT: "#f3f4f6",
-                foreground: "#111827",
-              },
-              popover: {
-                DEFAULT: "hsl(var(--popover))",
-                foreground: "hsl(var(--popover-foreground))",
-              },
-              card: {
-                DEFAULT: "hsl(var(--card))",
-                foreground: "hsl(var(--card-foreground))",
-              },
-            },
-          },
-        },
-      }
-    </script>
     <style>
        /* Custom scrollbar for better aesthetics */
       ::-webkit-scrollbar {
