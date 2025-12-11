@@ -317,7 +317,7 @@ const Navbar = ({ onOpenAbout, onOpenQuote }: { onOpenAbout: () => void; onOpenQ
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full bg-white/90 backdrop-blur-md z-40 border-b border-gray-200 shadow-sm">
+    <nav className="fixed w-full z-40 backdrop-blur-lg bg-white/30 border-b border-white/20 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -326,7 +326,7 @@ const Navbar = ({ onOpenAbout, onOpenQuote }: { onOpenAbout: () => void; onOpenQ
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <button onClick={onOpenAbout} className="text-gray-600 hover:text-black font-medium transition-colors focus:outline-none">
+            <button onClick={onOpenAbout} className="text-gray-700 hover:text-gray-900 font-medium transition-colors focus:outline-none">
               Sobre
             </button>
             <button onClick={onOpenQuote} className="bg-gray-900 text-white px-4 py-2 rounded-md font-medium hover:bg-black transition-colors">
@@ -335,7 +335,7 @@ const Navbar = ({ onOpenAbout, onOpenQuote }: { onOpenAbout: () => void; onOpenQ
           </div>
 
           <div className="md:hidden flex items-center">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-600 hover:text-gray-900 focus:outline-none">
+            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700 hover:text-gray-900 focus:outline-none">
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -343,12 +343,12 @@ const Navbar = ({ onOpenAbout, onOpenQuote }: { onOpenAbout: () => void; onOpenQ
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-white border-b border-gray-200">
+        <div className="md:hidden backdrop-blur-lg bg-white/30 border-b border-white/20">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <button onClick={() => { onOpenAbout(); setIsOpen(false); }} className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-black hover:bg-gray-50">
+            <button onClick={() => { onOpenAbout(); setIsOpen(false); }} className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-white/20 transition-colors">
               Sobre
             </button>
-            <button onClick={() => { onOpenQuote(); setIsOpen(false); }} className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-900 font-bold hover:bg-gray-50">
+            <button onClick={() => { onOpenQuote(); setIsOpen(false); }} className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-900 font-bold hover:bg-white/20 transition-colors">
               Solicitar Orçamento
             </button>
           </div>
