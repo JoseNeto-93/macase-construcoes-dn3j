@@ -275,17 +275,23 @@ const AboutModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
           </button>
 
           {/* Coluna da Imagem (Esquerda/Topo) */}
-          <div className="w-full md:w-1/2 h-[40vh] md:h-full relative shrink-0">
+          <div className="w-full md:w-1/2 h-[40vh] md:h-full relative shrink-0 overflow-hidden">
             <img 
               src="/marcelo-perfil.jpg" 
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
-                target.src = "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2000&auto=format&fit=crop";
+                target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2000&auto=format&fit=crop";
               }}
               alt="Engenheiro Mestre de Obras" 
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-center"
+              style={{
+                clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+              }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent md:bg-gradient-to-r md:from-transparent md:via-zinc-950/20 md:to-zinc-950"></div>
+            {/* Máscara com gradiente transparente nas bordas */}
+            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent md:bg-gradient-to-r md:from-black/40 md:via-transparent md:to-zinc-950/60 pointer-events-none"></div>
+            {/* Borda com efeito de vidro */}
+            <div className="absolute inset-0 border-2 md:border-4 border-white/10 rounded-3xl opacity-40 pointer-events-none"></div>
           </div>
 
           {/* Coluna do Texto (Direita/Baixo) */}
