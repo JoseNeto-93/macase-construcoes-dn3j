@@ -27,13 +27,22 @@ const TypewriterText = ({ text, duration = 2 }: { text: string; duration?: numbe
     <motion.span
       initial={{ width: 0 }}
       animate={{ width: 'auto' }}
-      transition={{ duration, ease: 'linear' }}
+      transition={{ 
+        duration, 
+        ease: 'linear',
+        repeat: Infinity,
+        repeatType: 'loop'
+      }}
       className="inline-block overflow-hidden"
     >
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.1 }}
+        transition={{ 
+          duration: 0.1,
+          repeat: Infinity,
+          repeatType: 'loop'
+        }}
       >
         {text}
       </motion.span>
