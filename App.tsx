@@ -22,7 +22,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const MotionDiv = motion.div as any;
 
 // Typewriter Animation Component
-const TypewriterText = ({ text, duration = 2 }: { text: string; duration?: number }) => {
+const TypewriterText = ({ text, duration = 4 }: { text: string; duration?: number }) => {
   return (
     <motion.span
       initial={{ width: 0 }}
@@ -32,9 +32,10 @@ const TypewriterText = ({ text, duration = 2 }: { text: string; duration?: numbe
         ease: 'linear',
         repeat: Infinity,
         repeatType: 'loop',
-        repeatDelay: 0.5
+        repeatDelay: 1
       }}
       className="inline-block overflow-hidden whitespace-nowrap"
+      style={{ minWidth: '0px' }}
     >
       {text}
     </motion.span>
@@ -352,7 +353,7 @@ const Navbar = ({ onOpenAbout, onOpenQuote }: { onOpenAbout: () => void; onOpenQ
           <div className="flex items-center">
             <HardHat className="h-8 w-8 text-gray-900" />
             <span className="ml-2 text-xl font-bold text-gray-900">
-              <TypewriterText text="Macase Construções" duration={2} />
+              <TypewriterText text="Macase Construções" duration={4.5} />
             </span>
           </div>
           
