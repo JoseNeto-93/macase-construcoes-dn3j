@@ -32,5 +32,15 @@
 </head>
   <body>
     <div id="root"></div>
+    <script>
+      console.log('HTML loaded, waiting for React...');
+      window.addEventListener('error', (e) => {
+        console.error('Global error:', e.error, e.message);
+      });
+      window.addEventListener('unhandledrejection', (e) => {
+        console.error('Unhandled rejection:', e.reason);
+      });
+    </script>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
