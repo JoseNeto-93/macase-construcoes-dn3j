@@ -21,6 +21,26 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const MotionDiv = motion.div as any;
 
+// Typewriter Animation Component
+const TypewriterText = ({ text, duration = 2 }: { text: string; duration?: number }) => {
+  return (
+    <motion.span
+      initial={{ width: 0 }}
+      animate={{ width: 'auto' }}
+      transition={{ duration, ease: 'linear' }}
+      className="inline-block overflow-hidden"
+    >
+      <motion.span
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.1 }}
+      >
+        {text}
+      </motion.span>
+    </motion.span>
+  );
+};
+
 const services = [
   {
     title: "Gestão de Obras",
@@ -322,7 +342,9 @@ const Navbar = ({ onOpenAbout, onOpenQuote }: { onOpenAbout: () => void; onOpenQ
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <HardHat className="h-8 w-8 text-gray-900" />
-            <span className="ml-2 text-xl font-bold text-gray-900">Macase Construções</span>
+            <span className="ml-2 text-xl font-bold text-gray-900">
+              <TypewriterText text="Macase Construções" duration={2} />
+            </span>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
