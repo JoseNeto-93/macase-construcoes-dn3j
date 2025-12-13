@@ -130,7 +130,7 @@ const QuoteModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
       return;
     }
 
-    const phoneNumber = "5515998974445";
+    const phoneNumber = "5515997340417";
     const text = `Olá, vim pelo site da Macase Construções.\n\n*Nome:* ${name}\n*Telefone:* ${phone}\n*Mensagem:* ${message}`;
     const encodedText = encodeURIComponent(text);
     
