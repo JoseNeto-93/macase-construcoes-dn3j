@@ -517,7 +517,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center mb-4 md:mb-0">
           <HardHat className="h-6 w-6 text-gray-500" />
-          <span className="ml-2 text-gray-400 font-medium">Macase Construções &copy; Todos os direitos reservados.</span> 
+          <span className="ml-2 text-gray-400 font-medium">Macase Construções &copy; Desenvolvido por DN3J.</span> 
         </div>
         <div className="flex space-x-6">
           <a 
