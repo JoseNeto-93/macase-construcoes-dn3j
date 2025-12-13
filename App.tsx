@@ -77,7 +77,7 @@ const projects = [
     title: "Inicio de Obra",
     category: "Estrutura",
     description: "Levantamento de sobrado com pilares e vigas aparentes, seguindo rigorosamente o projeto estrutural.",
-    image: "/estrutura-sobrado.jpg",
+    image: "/inicio-obra.png",
   },
   {
     title: "Alvenaria e Vedação",
@@ -95,13 +95,13 @@ const projects = [
     title: "Área de Lazer e Piscina",
     category: "Área Externa",
     description: "Construção de piscina em alvenaria com revestimento em pastilhas, escada submersa e borda térmica.",
-    image: "/piscina-lazer.jpg", 
+    image: "/area-piscina.png", 
   },
   {
     title: "Escadaria em Mármore e Serralheria",
     category: "Acabamento Fino",
     description: "Escada curva revestida em mármore travertino, com guarda-corpo em serralheria artística preta e corrimão de madeira.",
-    image: "/escada-marmore.jpg",
+    image: "/escada-marmore.png",
   }
 ];
 
