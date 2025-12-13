@@ -70,13 +70,13 @@ const projects = [
   {
     title: "Fundação e Impermeabilização",
     category: "Infraestrutura",
-    description: "Execução de viga baldrame com impermeabilização asfáltica e preparação de solo compactado.",
+    description: "Execução de viga baldrame com impermeabilização asfáltica e preparação de solo.",
     image: "/fundacao-png.png", 
   },
   {
     title: "Inicio de Obra",
     category: "Estrutura",
-    description: "Levantamento de sobrado com pilares e vigas aparentes, seguindo rigorosamente o projeto estrutural.",
+    description: "Levantamento de sobrado com pilares e vigas aparentes, seguindo rigorosamente o projeto.",
     image: "/inicio-obra.png",
   },
   {
@@ -94,13 +94,13 @@ const projects = [
   {
     title: "Área de Lazer e Piscina",
     category: "Área Externa",
-    description: "Construção de piscina em alvenaria com revestimento em pastilhas, escada submersa e borda térmica.",
+    description: "Construção de piscina em alvenaria com revestimento em pastilhas, escada submersa.",
     image: "/area-piscina.png", 
   },
   {
     title: "Escadaria em Mármore e Serralheria",
     category: "Acabamento Fino",
-    description: "Escada curva revestida em mármore travertino, com guarda-corpo em serralheria artística preta e corrimão de madeira.",
+    description: "Escada curva revestida em mármore travertino, com guarda-corpo.",
     image: "/escada-marmore.png",
   }
 ];
