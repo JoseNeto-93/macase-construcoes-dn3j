@@ -89,7 +89,7 @@ const projects = [
     title: "Centro Comercial Moderno",
     category: "Fachada Comercial",
     description: "Acabamento de fachada com design geométrico, pintura projetada vibrante e instalação de vidros.",
-    image: "/fachada-comercial.jpg",
+    image: "/centro-comercial.png",
   },
   {
     title: "Área de Lazer e Piscina",
