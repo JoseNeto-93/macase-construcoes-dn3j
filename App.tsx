@@ -30,8 +30,8 @@ const TypewriterText = ({ text, duration = 4 }: { text: string; duration?: numbe
       transition={{ 
         duration, 
         ease: 'linear',
-        repeat: Infinity,
-        repeatType: 'loop',
+        repeat: ,
+        repeatType: ',
         repeatDelay: 1
       }}
       className="inline-block overflow-hidden whitespace-nowrap"
