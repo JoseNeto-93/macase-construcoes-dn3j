@@ -83,7 +83,7 @@ const projects = [
     title: "Alvenaria e Vedação",
     category: "Residencial",
     description: "Levantamento de paredes com alinhamento e prumo perfeitos, preparando para a etapa de laje.",
-    image: "/alvenaria-tijolo.jpg", 
+    image: "/alvenaria.png", 
   },
   {
     title: "Centro Comercial Moderno",
