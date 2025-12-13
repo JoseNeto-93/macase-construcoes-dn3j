@@ -74,7 +74,7 @@ const projects = [
     image: "/fundacao-png.png", 
   },
   {
-    title: "Estrutura de Concreto Armado",
+    title: "Inicio de Obra",
     category: "Estrutura",
     description: "Levantamento de sobrado com pilares e vigas aparentes, seguindo rigorosamente o projeto estrutural.",
     image: "/estrutura-sobrado.jpg",
